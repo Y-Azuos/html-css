@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/wetrat.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>The WetRat - Devlogs</title>
+    
+</head>
+<body>
+    <header>
+        <h1>The WetRat</h1>
+        <picture class="firstPicture">
+            <img id="primeira" src="img/wetrat.png" alt="ratazana">
+        </picture>
+        <p>Devlogs & News</p>
+    </header>
+    <main>
+        <section>
+            <h1>Last Updates</h1>
+            <article>
+                <h2>First Commit: Hello World!</h2>
+                <aside>date</aside>
+                <p>Welcome! Here you'll find the latest updates on my projects, progress reports and behind-the-scenes content. Stay on top of the news and find out what's happening.</p>
+                <button onclick="toggleInfo()">Read more</button>
+            <div id="infoSection">
+                <picture>
+                    <img src="img/post1_01.png" alt="Nothing to show">
+                </picture>
+                <h2>Welcome to WetRat!</h2><!--Main posts and links-->
+                <p>I'm excited to begin my journey and share with you the first publication on my website. WetRat is a place dedicated to recording and sharing the progress of my creations.</p>
+                <p>Here, you'll find:</p>
+                <ul>
+                    <li><strong>Progress Reports:</strong> Keep up to date with my progress on projects, from initial development to the final phase.</li>
+                    <li><strong>Behind-the-scenes content:</strong> Find out what happens behind the scenes. I'll share the stories, challenges and achievements.</li>
+                    <li><strong>News and Updates:</strong> Stay on top of the latest news from The WetRat. Keep an eye out for new releases, events and other information that may be of interest to you.</li>
+                </ul>
+                <picture>
+                    <img src="img/post1_02.png" alt="Thank you bye">
+                </picture>
+                
+            </div>
+            <script>
+            function toggleInfo() {
+                const infoSection = document.getElementById("infoSection");
+                if (infoSection.style.display === "none") {
+                    infoSection.style.display = "block"; // Exibe a seção
+                } else {
+                    infoSection.style.display = "none"; // Oculta a seção
+                }
+            }
+            function toggleInfo() {
+                const infoSection = document.getElementById("infoSection");
+                infoSection.classList.toggle("show"); // Alterna a classe "show"
+            }
+            </script>              
+                        
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>© 2024 The WetRat. All rights reserved.</p>
+    </footer>
+
+   </body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Mídias HTML5</title>
+</head>
+<body>
+    <h1>Vou colocar umas imagens aleatórias aqui e ajustar o tamanho pra caber na tela, <abbr title="Pq não usar a porra do CSS???">utilizando html...</abbr></h1>
+    <p>tente abrir o site em dispositivos diferentes ou redimencione a janela do navegador</p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/300.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/700.png" type="image/png">
+        <img src="imagens/1000.png" alt="Imagem Grande">
+    </picture>
+    <h1>Áudio time</h1>
+    <p>Agora vou colocar um áudio para reproduzir nessa bagaça</p>
+    <audio src="audio/System Corruption - The Soundlings.mp3" controls loop></audio>
+    <h1>Vídeo Time!</h1>
+    <p>Abaixo deve aparecer um vídeo do YouTube</p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/TCeyIwFGkYo?si=1Ao-zDAwR_nxZ9fh" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <p>Também posso utilizar vídeos hospedados na minha maquina</p>
+    <video width="560" height="315" poster="imagens/500.png" controls>
+        <source src="video/video.mp4" type="video/mp4">
+        <source src="video/video.webm" type="video/webm">
+        <source src="video/video.ogv" type="video/ogv">
+        <p>Seu navegador não tem compatibilidade com reprodução de vídeo. Baixe o vídeo <a href="video/video.mp4">aqui</a></p>
+    </video>
+    <p>Segunda maneira de colocar um vídeo (mais simples e ineficiente, porém foda-se)</p>
+    <video src="video/video.mkv.mp4" width="560" height="315" poster="imagens/300.png" controls></video>
+    <p>No Chrome, para utilizar o autoplay, é preciso utilizar a parametrização muted</p>
+   
+
+</body>
+</html>
